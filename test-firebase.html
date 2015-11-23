@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+        
+        <script type="text/javascript" charset="utf-8" src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+            
+        
+    </head>
+    <body>
+
+    <input type="text"  id="namename" />
+    <input type="text" id="texttext" />
+
+
+    <script type="text/javascript" charset="utf-8">
+        
+        var mysuperfire = new Firebase('https://iwnyhnz7yhx.firebaseio-demo.com/');
+        $('#texttext').keypress(function (e) {
+        if (e.keyCode == 13) {
+          var name = $('#namename').val();
+          var text = $('#texttext').val();
+        mysuperfire.push({name: name, text: text});
+        $('#texttext').val('');
+        }
+        });
+            
+            
+            
+</script>
+        
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<ion-side-menus>
+    <ion-pane ion-side-menu-content>
+        <div class="bar bar-positive bar-header">
+            <button menu-toggle="left" class="button icon ion-navicon"></button>
+
+        </div>
+        <ion-nav-view name="mainContent" animation="slide-left-righ"></ion-nav-view>
+    </ion-pane>
+
+
+    <ion-side-menu side="left">
+        <header class ="bar bar-header bar-balanced">
+            <h1 class="title">Elite Schedule</h1>
+        </header>
+        
+        <ion-content class="has-header">
+            
+        <ion-list>
+            <ion-item nav-clear menu-close ui-sref="homehcn.leagues">home</ion-item>
+            <ion-item nav-clear menu-close ui-sref="myapp.teams">teams</ion-item>
+            <ion-item nav-clear menu-close ui-sref="myapp.standings">standing</ion-item>
+            <ion-item nav-clear menu-close ui-sref="myapp.locations">locations</ion-item>
+            <ion-item nav-clear menu-close ui-sref="myapp.rules">rules</ion-item>
+        </ion-list>
+    </ion-side-menu>
+    
+</ion-side-menus>

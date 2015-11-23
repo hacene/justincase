@@ -1,0 +1,9 @@
+them: ~/Web/ionictestplural $ ionic start firstionicapp blank 
+/* start a project in an empty directory */
+
+them: ~/Web/ionictestplural/firstionicapp $ ionic serve
+/* start serving the content of the directory and refresh are automatic when you save a file*/
+
+them: ~/Web/ionictestplural $ ionic start secondionicapptabs tabs
+/* start a project with the tabs template */ 
+
